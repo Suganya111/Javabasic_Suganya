@@ -3,9 +3,16 @@ package com.aaludra.basicprograms;
 public class ArraySample {
 	public static void print() {
 
-		for (int i = 10; i > 1; i--) {
-			for (int j = 10; j >= i; j--) {
-				System.out.print(i + " ");
+		for (int i = 10; i >= 1; i--) {
+			if (i % 2 != 0) {
+				{
+					System.out.println(i);
+				}
+			} else {
+				for (int j = 10; j >= i; j--) {
+
+					System.out.print(i + " ");
+				}
 			}
 			System.out.println();
 		}
