@@ -1,51 +1,38 @@
 package com.aaludra.basicprograms;
 
 public class EnumTask {
-	enum CountryWithCurrency {
+	enum Sample {
 		INR("India", "Rs"), USD("USA", "$"), EURO("Europe", "Euro");
 
-		private CountryWithCurrency(String country, String currency) {
+		Sample(String country, String currency) {
 			this.country = country;
 			this.currency = currency;
 		}
 
-		private final String country;
-		private final String currency;
+		String country, currency;
 
-
-		public String getCountry() {
-			return country;
-		}
-
-
-		public String getCurrency() {
-
-			return currency;
-		}
-		public void getCurrency1(String country)
-		{
-			CountryWithCurrency values[] = CountryWithCurrency.values();
-			for (CountryWithCurrency value : values) {
-				if(this.country==country)
-				{
-					System.out.println(currency);
+		public static Sample getCurrency(String name) {
+			for (Sample value : Sample.values()) {
+				if (value.country.equals(name)) {
+					return value;
 				}
-			}
+
+			}return null;
 		}
-
-		CountryWithCurrency cwc;
-
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-
-			EnumTask task = new EnumTask();
-
-
-
-		}
-
-
 
 	}
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Sample s = Sample.getCurrency("India");
+		System.out.println(s.currency);
+
+
+	}
 }
+
+
+
+
+
+
