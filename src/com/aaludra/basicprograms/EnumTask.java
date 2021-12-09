@@ -14,12 +14,12 @@ public class EnumTask {
 		public static Sample getCurrency(String name) {
 			for (Sample value : Sample.values()) {
 				if (value.country.equals(name)) {
+
 					return value;
 				}
-
-			}return null;
+			}
+			return null;
 		}
-
 	}
 
 	public static void main(String[] args) {
@@ -27,12 +27,5 @@ public class EnumTask {
 		Sample s = Sample.getCurrency("India");
 		System.out.println(s.currency);
 
-
 	}
 }
-
-
-
-
-
-
