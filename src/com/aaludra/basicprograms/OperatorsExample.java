@@ -1,26 +1,25 @@
 package com.aaludra.basicprograms;
 
 public class OperatorsExample {
-
+	/*
+	 * usage of \n token will reduce the code writing time
+	 */
 
 	public void increment() {
 		int i = 10, j = 20;
-		System.out.println(i++);
-		System.out.println(i);
-		System.out.println(++j);
-		System.out.println(j);
+		System.out.println(i++ + "\n" + i + "\n" + ++j + " \n" + j);
+
 	}
 
 	public void decrement() {
 		int i = 30, j = 40;
-		System.out.println(i--);
-		System.out.println(i);
-		System.out.println(--j);
-		System.out.println(j);
+		System.out.println(i-- + "\n" + i + "\n" + --j + " \n" + j);
+
 	}
 
 	public void arithmetic() {
 		int i = 10, j = 2;
+
 		System.out.println(i + j);
 		System.out.println(i - j);
 		System.out.println(i * j);
@@ -36,7 +35,7 @@ public class OperatorsExample {
 		System.out.println(result);
 		if (a > 10 && b < 20)
 			result = true;
-			System.out.println(result);
+		System.out.println(result);
 	}
 
 	public void or() {

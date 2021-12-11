@@ -1,7 +1,12 @@
 package com.aaludra.basicprograms;
 
 public class Inheritance extends InheritanceExample {
-	float bonus = 10000;
+	/*
+	 * in 7th line the variable value is in integer form but the declared datatype
+	 * is float there is no error on the program but declaring accurate datatype is
+	 * important
+	 */
+	float bonus = 10000.0f;
 
 	public void getBonus() {
 		float totalBonus = bonus + EmployeeSalary;

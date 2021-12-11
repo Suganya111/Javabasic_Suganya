@@ -1,6 +1,9 @@
 package com.aaludra.basicprograms;
 
 public class ArraySample {
+	/*
+	 * The codings looks simple and efficient
+	 */
 	public static void print() {
 
 		for (int i = 10; i >= 1; i--) {
@@ -17,6 +20,7 @@ public class ArraySample {
 			System.out.println();
 		}
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		print();

@@ -1,7 +1,10 @@
 package com.aaludra.basicprograms;
 
 public class MethodOverloading {
-	public static int multiply(int a, int b) {//
+	/*
+	 * no mistakes to point out
+	 */
+	public static int multiply(int a, int b) {
 		return a * b;
 	}
 
@@ -12,6 +15,7 @@ public class MethodOverloading {
 	public static int multiply(int a, int b, int c, int d) {
 		return a * b * c * d;
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(multiply(2, 3));
