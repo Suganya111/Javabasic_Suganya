@@ -1,6 +1,15 @@
 package com.aaludra.basicprograms;
 
 public class ConstructorsExample {
+	/*
+	 * the program is simple and easy to understand. There is two types of
+	 * constructors on program, one is non parameterized constructor another one is
+	 * parameterized constructor both the constructors were used in this program. To
+	 * call the constructors not need to create new variable we can simply add the
+	 * new keyword in front of the constructor name in main method. So the objects
+	 * in line 25 and 26 are not used.
+	 * 
+	 */
 	String language;
 
 	public ConstructorsExample() {
@@ -15,8 +24,8 @@ public class ConstructorsExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ConstructorsExample example = new ConstructorsExample();
-		ConstructorsExample example1 = new ConstructorsExample("Java");
+		new ConstructorsExample();
+		new ConstructorsExample("Java");
 	}
 
 }

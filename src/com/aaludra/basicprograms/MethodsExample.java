@@ -1,6 +1,10 @@
 package com.aaludra.basicprograms;
 
 public class MethodsExample {
+	/*
+	 * the static method squareMethod() from the type MethodsExample should be
+	 * accessed in a static way
+	 */
 	static int num1 = 100, num2 = 101, add, square;
 
 	public static int addMethod() {
@@ -15,8 +19,8 @@ public class MethodsExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MethodsExample example = new MethodsExample();
-		example.squareMethod();
+
+		MethodsExample.squareMethod();
 	}
 
 }
