@@ -3,8 +3,9 @@ package com.aaludra.basicprograms;
 public class EncapsulationMain {
 	/*
 	 * no mistakes to point out.
-	 * 
+	 *
 	 */
+
 	public static void main(String[] args) {
 
 		EncapsulationExample example = new EncapsulationExample();
