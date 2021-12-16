@@ -3,7 +3,7 @@ package com.aaludra.basicprograms;
 public class StudentWrapper implements Comparable<StudentWrapper> {
 	Integer rollno;
 	String name;
-	Double marks;// Wrapper class is used because of using comparable interface for sorting out
+	double marks;// Wrapper class is used because of using comparable interface for sorting out
 
 	StudentWrapper(int rollno, String name, double marks) {
 		this.rollno = rollno;

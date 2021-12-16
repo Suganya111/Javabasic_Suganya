@@ -6,7 +6,7 @@ import java.util.Collections;
 public class StudentList {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		ArrayList<StudentWrapper> list = new ArrayList<>();
 		list.add(new StudentWrapper(1, "Anitha", 89));
 		list.add(new StudentWrapper(5, "Chithra", 43));
