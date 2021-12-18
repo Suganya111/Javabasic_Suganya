@@ -1,5 +1,8 @@
 package com.aaludra.basicprograms;
 
+/*
+ * comments on main class
+ */
 public enum Directions {
 	North {
 		@Override
@@ -23,7 +26,7 @@ public enum Directions {
 	South;
 
 	void state() {
-		// TODO Auto-generated method stub
+
 		System.out.println("Tamil Nadu");
 	}
 

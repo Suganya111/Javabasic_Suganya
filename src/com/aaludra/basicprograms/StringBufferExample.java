@@ -1,8 +1,10 @@
 package com.aaludra.basicprograms;
 
+/*
+ * all methods in stringbuffer are used in this program
+ */
 public class StringBufferExample {
-	public static void display()
-	{
+	public static void display() {
 		StringBuffer sb = new StringBuffer("Hello ");
 		System.out.println(sb.capacity());
 		sb.append("World");
@@ -15,8 +17,9 @@ public class StringBufferExample {
 		sb.insert(4, "ProgrammingLanguages");
 
 	}
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		display();
 	}
 

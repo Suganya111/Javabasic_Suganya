@@ -1,9 +1,13 @@
 package com.aaludra.basicprograms;
 
+/*
+ * no error in this program
+ */
 public class TestEnum {
 	Directions side;
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		for (Directions d : Directions.values()) {
 			System.out.println(d);
 		}

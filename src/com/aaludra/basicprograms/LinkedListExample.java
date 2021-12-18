@@ -5,6 +5,9 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+/*
+ * This program has no error or mistake
+ */
 public class LinkedListExample {
 
 	public static void main(String[] args) {
