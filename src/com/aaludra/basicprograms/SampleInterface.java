@@ -1,5 +1,8 @@
 package com.aaludra.basicprograms;
 
+/*
+ * comment on main class
+ */
 public interface SampleInterface {
 	int i = 10;
 
@@ -17,7 +20,5 @@ public interface SampleInterface {
 	private void privateshow() {
 		System.out.println("Private methods can also be accessed in private method");
 	}
-
-
 
 }

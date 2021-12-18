@@ -1,16 +1,21 @@
 package com.aaludra.basicprograms;
 
+/*
+ * If use the same variables to boxing and un-boxing it will be easy to understand the wrapper class
+ * 
+ */
 public class WrapperclassExample {
 
-
 	byte b = 2;
-	boolean bool=true;
+	boolean bool = true;
 	char c = 'a';
 	double d = 60.d;
 	float f = 6.2f;
 	int i = 10;
 	long l = 3333333l;
 	short s = 20;
+
+	Byte b2 = b; // un-boxing
 
 	Byte b1 = 20;
 	Boolean bool1 = false;
@@ -21,9 +26,8 @@ public class WrapperclassExample {
 	Long l1 = 3435333L;
 	Short s1 = 40;
 
-	public void convertPrimitiveData()
-	{
-		Byte byteobj=b;
+	public void convertPrimitiveData() {
+		Byte byteobj = b;
 		Boolean booleanobj = bool;
 		Character charobj = c;
 		Double doubleobj = d;
@@ -54,7 +58,7 @@ public class WrapperclassExample {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		WrapperclassExample example = new WrapperclassExample();
 		example.convertPrimitiveData();
 		example.convertObjectData();
