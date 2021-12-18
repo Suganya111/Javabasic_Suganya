@@ -14,6 +14,7 @@ public class StudentList {
 		list.add(new StudentWrapper(7, "Janani", 65));
 		list.add(new StudentWrapper(5, "Saranya", 21));
 		System.out.println("Before Sorting");
+		System.out.println(list);
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}

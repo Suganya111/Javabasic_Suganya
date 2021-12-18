@@ -1,13 +1,12 @@
 package com.aaludra.basicprograms;
 
 import java.util.ArrayList;
-import java.util.List;
-
 
 public class StudentTaskMain {
+
 	static String grade;
 
-	public static String UpdateGrade(double percentage) {
+	public static String updateGrade(double percentage) {
 		if (percentage >= 9) {
 			grade = "A";
 		} else if (percentage >= 8) {
@@ -25,21 +24,24 @@ public class StudentTaskMain {
 	}
 	public static void main(String[] args) {
 
+		String s;
+		ArrayList<Student> list = new ArrayList<>();
+		list.add(new Student("Aarthi", 8.9));
+		list.add(new Student("Bama", 7.9));
+		list.add(new Student("Chithra", 4.9));
+		list.add(new Student("Durga", 3.9));
+		list.add(new Student("Jamuna", 5.9));
+		list.add(new Student("Indhu", 3.1));
+		list.add(new Student("Moshika", 9.0));
 
-		List<Student> list = new ArrayList<>();
+		for (Student studentObject : list) {
+			s = updateGrade(studentObject.getPercentage());
+			studentObject.setGrade(s);
 
-		list.add(new Student("Nivetha", 5.3));
-		list.add(new Student("Moshika", 9.3));
-		list.add(new Student("Suganya", 6.3));
-		list.add(new Student("Chithra", 3.3));
-		list.add(new Student("Jamuna", 7.3));
-		list.add(new Student("Sumathi", 8.3));
-
-		for (Student lists : list) {
-			UpdateGrade(lists.percentage);
 		}
-		
-
+		for (Student list1 : list) {
+			System.out.println(list1.getName() + "       Grade " + list1.getGrade());
+		}
+	}
 	}
 
-}
