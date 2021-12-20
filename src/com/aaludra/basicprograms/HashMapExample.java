@@ -32,6 +32,20 @@ public class HashMapExample {
 			System.out.println(me.getValue());
 
 		}
+		hm.putIfAbsent(57, "Swathi");
+		System.out.println(hm);
+		HashMap<Integer, String> hm1 = new HashMap<>();
+		hm1.putAll(hm);
+		hm1.put(32, "Maheswari");
+		hm1.put(43, "Lakshmi Priya");
+		Set s1 = hm1.entrySet();
+		Iterator itr = s1.iterator();
+		while (itr.hasNext()) {
+			if (hm1.containsValue("Suganya"))
+				System.out.println(itr.next());
+			
+			}
+
 	}
 
 }
