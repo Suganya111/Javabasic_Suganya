@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/*
+ * Same mistake repeated scanner class is never closed
+ * The program dosen't work properly
+ */
 public class ListHR {
 
 	public static void main(String[] args) {
@@ -23,6 +27,7 @@ public class ListHR {
 			} else if (command.equals("Delete")) {
 				int x = sc.nextInt();
 				list.remove(x);
+				sc.close();
 			}
 		}
 

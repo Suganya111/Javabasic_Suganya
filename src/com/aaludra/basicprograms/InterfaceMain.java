@@ -1,13 +1,17 @@
 package com.aaludra.basicprograms;
 
+/*Interface variables are static because java interfaces cannot be instantiated on their own
+ * 'we have to access the variables using it's class name not with object'
+ */
 public class InterfaceMain implements SampleInterface {
-	int i = 65;
+	int j = 65;
+
 	@Override
 	public void abstractshow() {
 		System.out.println("Abstract methods need to be instantiated by the other class which implements Interface");
 	}
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		SampleInterface example;
 		example = new InterfaceMain();
@@ -18,6 +22,7 @@ public class InterfaceMain implements SampleInterface {
 
 		example.abstractshow();
 		System.out.println(example.i);
+
 	}
 
 }

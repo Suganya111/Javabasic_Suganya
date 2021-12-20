@@ -23,7 +23,7 @@ public class EnumTask {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		Sample s = Sample.getCurrency("India");
 		System.out.println(s.currency);
 
