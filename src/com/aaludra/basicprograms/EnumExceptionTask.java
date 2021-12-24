@@ -1,6 +1,10 @@
 package com.aaludra.basicprograms;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class EnumExceptionTask {
+
 	enum Sample {
 		INR("India", "Rs"), USD("USA", "$"), EURO("Europe", "Euro");
 
@@ -21,24 +25,38 @@ public class EnumExceptionTask {
 			return null;
 		}
 
-		public static void getException() throws CustomException {
-			try {
-				Sample s = getCurrency("India");
-				System.out.println(s.currency);
+		public static void getException() throws NullPointerException, NoDataFoundException, InvalidInputException {
 
-			} catch (NullPointerException e) {
-				throw new CustomException("No data found");
+
+			String input = "1234";
+			Pattern p = Pattern.compile("[A-Za-z]{3,10}");
+				Matcher m = p.matcher(input);
+
+				boolean b = m.matches();
+				if (!b) {
+					throw new InvalidInputException("Invalid data");
+				} else {
+
+					try {
+					Sample s = getCurrency(input);
+
+					System.out.println(s.currency);
+				} catch (NullPointerException e) {
+					throw new NoDataFoundException("No data found");
+				}
 
 			}
-		}
+			}
 	}
-
-	public static void main(String[] args) throws CustomException {
+	public static void main(String[] args) throws NoDataFoundException, NullPointerException, InvalidInputException {
 		try {
 			Sample.getException();
 
-		} catch (CustomException e) {
+		} catch (NoDataFoundException e) {
 			System.out.println(e.getMessage());
 		}
+		catch (InvalidInputException e) {
+			System.out.println(e.getMessage());
 	}
+}
 }
