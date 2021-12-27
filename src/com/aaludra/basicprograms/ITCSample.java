@@ -22,7 +22,7 @@ public class ITCSample {
 		System.out.println("going to deposit...");
 		this.amount += amount;
 		System.out.println("deposit completed... ");
-		notify();
+		notifyAll();
 	}
 
 }

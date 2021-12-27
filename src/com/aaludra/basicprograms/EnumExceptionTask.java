@@ -28,8 +28,8 @@ public class EnumExceptionTask {
 		public static void getException() throws NullPointerException, NoDataFoundException, InvalidInputException {
 
 
-			String input = "1234";
-			Pattern p = Pattern.compile("[A-Za-z]{3,10}");
+			String input = "India";
+			Pattern p = Pattern.compile("^[A-Za-z]{3,10}$");
 				Matcher m = p.matcher(input);
 
 				boolean b = m.matches();
