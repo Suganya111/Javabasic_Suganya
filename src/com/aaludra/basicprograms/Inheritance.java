@@ -9,8 +9,8 @@ public class Inheritance extends InheritanceExample {
 	float bonus = 10000.0f;
 
 	public void getBonus() {
-		float totalBonus = bonus + EmployeeSalary;
-		System.out.println("The total bonus for the employee " + EmployeeName + "is " + totalBonus);
+		float totalBonus = bonus + employeeSalary;
+		System.out.println("The total bonus for the employee " + employeeName + "is " + totalBonus);
 	}
 
 	public static void main(String[] args) {
@@ -18,6 +18,8 @@ public class Inheritance extends InheritanceExample {
 		Inheritance example = new Inheritance();
 		example.getDetails();
 		example.getBonus();
+		example.setAge(4);
+		System.out.println(example.getAge());
 	}
 
 }

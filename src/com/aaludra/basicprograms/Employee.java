@@ -18,4 +18,14 @@ public class Employee {
 		this.yoj = yoj;
 	}
 
+//A class can have two main methods using method Overloading, program for checking two main method 
+	public static void main(int a) {
+		System.out.println("Main method 1");
+	}
+
+	public static void main(String[] args2, String[] args1) {
+		System.out.println("Main method 2");
+		main(3);
+	}
+
 }
