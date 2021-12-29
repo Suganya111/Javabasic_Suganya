@@ -1,4 +1,4 @@
-package com.aaludra.basicprograms;
+package com.aaludra.basicprograms.string;
 
 /*
  * in this program you calculated the size of the string There is nothing to mark as mistake 

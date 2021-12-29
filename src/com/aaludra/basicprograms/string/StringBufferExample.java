@@ -1,4 +1,4 @@
-package com.aaludra.basicprograms;
+package com.aaludra.basicprograms.string;
 
 /*
  * all methods in stringbuffer are used in this program

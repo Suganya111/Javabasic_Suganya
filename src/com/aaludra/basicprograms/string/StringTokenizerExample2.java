@@ -1,4 +1,4 @@
-package com.aaludra.basicprograms;
+package com.aaludra.basicprograms.string;
 
 /*
  * we can also use boolean value after the delimiter to print the delimiter too

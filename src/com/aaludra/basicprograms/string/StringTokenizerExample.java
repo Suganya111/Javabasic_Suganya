@@ -1,4 +1,4 @@
-package com.aaludra.basicprograms;
+package com.aaludra.basicprograms.string;
 
 import java.util.StringTokenizer;
 
