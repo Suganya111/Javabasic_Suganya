@@ -32,7 +32,7 @@ public class StudentGenerics {
 
 	@Override
 	public String toString() {
-		return "StudentGenerics [id=" + getId() + ", name=" + getName() + ", mark=" + getMark() + "]";
+		return "StudentGenerics id=" + getId() + ", name=" + getName() + ", mark=" + getMark();
 	}
 
 }

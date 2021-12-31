@@ -9,25 +9,18 @@ public class AccountGenerics {
 		return accName;
 	}
 
-	public void setAccName(String accName) {
-		this.accName = accName;
-	}
+
 
 	public long getAccNo() {
 		return accNo;
 	}
 
-	public void setAccNo(int accNo) {
-		this.accNo = accNo;
-	}
+
 
 	public String getCity() {
 		return city;
 	}
 
-	public void setCity(String city) {
-		this.city = city;
-	}
 
 	public AccountGenerics(String accName, int accNo, String city) {
 		this.accName = accName;
@@ -37,7 +30,7 @@ public class AccountGenerics {
 
 	@Override
 	public String toString() {
-		return "AccountGenerics [accName=" + getAccName() + ", accNo=" + getAccNo() + ", city=" + getCity() + "]";
+		return "AccountGenerics accName=" + getAccName() + ", accNo=" + getAccNo() + ", city=" + getCity();
 	}
 
 }

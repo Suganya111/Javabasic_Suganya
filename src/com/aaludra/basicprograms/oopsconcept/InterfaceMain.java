@@ -1,6 +1,4 @@
-package com.aaludra.basicprograms;
-
-import com.aaludra.basicprograms.oopsconcept.SampleInterface;
+package com.aaludra.basicprograms.oopsconcept;
 
 /*Interface variables are static because java interfaces cannot be instantiated on their own
  * 'we have to access the variables using it's class name not with object'

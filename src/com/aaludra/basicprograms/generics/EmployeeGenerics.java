@@ -9,25 +9,19 @@ public class EmployeeGenerics {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
+
 
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+
 
 	public float getSalary() {
 		return salary;
 	}
 
-	public void setSalary(float salary) {
-		this.salary = salary;
-	}
+
 
 	public EmployeeGenerics(int id, String name, float salary) {
 
@@ -38,7 +32,7 @@ public class EmployeeGenerics {
 
 	@Override
 	public String toString() {
-		return "EmployeeGenerics [id=" + getId() + ", name=" + getName() + ", salary=" + getSalary() + "]";
+		return "EmployeeGenerics id=" + getId() + ", name=" + getName() + ", salary=" + getSalary();
 	}
 
 
