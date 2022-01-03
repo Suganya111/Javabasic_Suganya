@@ -17,7 +17,7 @@ public class GenericsMapExample {
 
 		Iterator<Map.Entry<Integer, String>> itr = set.iterator();
 		while (itr.hasNext()) {
-			Map.Entry e = itr.next();
+			Map.Entry<Integer, String> e = itr.next();
 			System.out.println(e.getKey() + " " + e.getValue());
 		}
 

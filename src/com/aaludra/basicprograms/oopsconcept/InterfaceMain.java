@@ -15,13 +15,13 @@ public class InterfaceMain implements SampleInterface {
 
 		SampleInterface example;
 		example = new InterfaceMain();
-		System.out.println("The value of variables in Interface cannot be changed: " + example.i);
+		System.out.println("The value of variables in Interface cannot be changed: " + SampleInterface.i);
 		example.defaultshow();
 		SampleInterface.staticshow();// static methods can't accessed by objects so we are calling static methods by
 										// Interface name
 
 		example.abstractshow();
-		System.out.println(example.i);
+		System.out.println(SampleInterface.i);
 
 	}
 

@@ -1,6 +1,11 @@
 package com.aaludra.basicprograms.enumprogram;
 
 public class EnumException extends Exception {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	enum Sample {
 		INR("India", "Rs"), USD("USA", "$"), EURO("Europe", "Euro");
 
